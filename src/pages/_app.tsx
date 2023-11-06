@@ -1,18 +1,18 @@
 import ContactUs from '@/components/ContactUs'
 import Header from '@/components/Header'
+import Info from '@/components/Info'
+import { theme } from '@/componentsStyles/globalStyles'
 import '@/pagesStyles/globals.css'
+import useWindowSize from '@/utils.tsx/useWindowSize'
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
+  const [width] = useWindowSize();
 
   const getLayout = Component.getLayout ?? ((page) => (<div id= "root">
-    <Head >
-      <title>MW-VISAS  -  Expertos migratorios</title>
-      {/* <link rel="icon" href="/favicon.ico" /> */}
-      </Head>
-  <Header/>{page} <ContactUs/>
+  <Header/>{page} <ContactUs/> {width < 768 ? <Info color={theme.colors.blue.dark}/> : null}
   </div>))
   return getLayout(<Component {...pageProps} />)}
 

@@ -14,7 +14,7 @@ const Services = () => {
     image={usa} apiParameters={{phone: 573196578007, message: "Hola, me gustaría saber sobre sus servicios para Visa Americana."}} key="usVisaBtn"/>
   
   <ServiceSectionC title="Visa Canadiense" description="Quieres vivir nuevas experiencias y conocer Canada." 
-    image={ca} apiParameters={{phone: 573196578007, message: "Hola, me gustaría saber sobre sus servicios para Visa Americana."}} key="caVisaBtn"/>
+    image={ca} apiParameters={{phone: 573196578007, message: "Hola, me gustaría saber sobre sus servicios para Visa Canadiense."}} key="caVisaBtn"/>
   
   <ServiceSectionC title="Pasaporte" description="Obtén tu cita y adquiere tu documento de viaje." 
     image={passport} apiParameters={{phone: 573196578007, message: "Hola, me gustaría saber sobre sus servicios para Pasaporte."}} key="passportBtn"/>

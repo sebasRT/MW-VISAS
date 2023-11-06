@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
-export const InfoContainer = styled.div`
-color: whitesmoke;
+interface props {
+    color: string;
+}
+export const InfoContainer = styled.div<props>`
+color: ${(props)=> props.color};
 text-align: center;
 font-size: 0.5em    
 `

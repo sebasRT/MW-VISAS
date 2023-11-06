@@ -1,8 +1,8 @@
 import { InfoContainer } from "../componentsStyles/Info"
 
-const Info = () => {
+const Info = ({color}:{color:string}) => {
   return (
-   <InfoContainer>
+   <InfoContainer color={color}>
    <h3>MW VISAS</h3>
     <p>INFO@MWVISAS.CO</p>
     <p>Bogotá, Colombia </p>

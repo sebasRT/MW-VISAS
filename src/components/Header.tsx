@@ -1,3 +1,4 @@
+import { theme } from '@/componentsStyles/globalStyles';
 import { HeaderContainer, LogoImage, NavContainer} from '../componentsStyles/Header'
 import useWindowSize from '../utils.tsx/useWindowSize';
 import Info from './Info';
@@ -17,7 +18,7 @@ const Header = () => {
           {/* <Link href='FQ'>Preguntas Frecuentes</Link> */}
           
         </NavContainer>
-        { width > 768 ? <Info/> : null}
+        { width > 768 ? <Info color={theme.colors.grey}/> : null}
         
     </HeaderContainer>
   )
