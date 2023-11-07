@@ -1,5 +1,5 @@
 import { ServiceDescription, ServiceSection } from '@/pagesStyles/main/ServicesStyled'
-import useEncodeWppURI from '@/utils.tsx/useEncodeWppURI'
+import useEncodeURI from '@/utils.tsx/useEncodeWppURI'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -15,7 +15,7 @@ interface props {
 }
 
 const ServiceSectionC = ({title, description, image, apiParameters}: props) => {
-const apiURL = useEncodeWppURI(apiParameters.phone, apiParameters.message)
+const apiURL = useEncodeURI(apiParameters.phone, apiParameters.message)
 
   return (
     <ServiceSection>

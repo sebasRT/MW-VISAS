@@ -1,6 +1,5 @@
 import React, { useReducer, useState } from 'react';
 import { ContactForm, SendButton } from '../componentsStyles/contactForm';
-import { redirect } from 'next/navigation';
 import useEncodeWppURI from '@/utils.tsx/useEncodeWppURI';
 import { useRouter } from 'next/router';
 
