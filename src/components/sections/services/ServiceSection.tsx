@@ -15,7 +15,7 @@ interface props {
 }
 
 const ServiceSectionC = ({title, description, image, apiParameters}: props) => {
-const apiURL = useEncodeURI(apiParameters.phone, apiParameters.message)
+const apiURL = "api"
 
   return (
     <ServiceSection>
