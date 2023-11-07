@@ -15,9 +15,10 @@ interface props {
 }
 
 const ServiceSectionC = ({title, description, image, apiParameters}: props) => {
-const apiURL = "api"
+const apiURL = useEncodeURI(apiParameters.phone, apiParameters.message)
 
   return (
+    <>
     <ServiceSection>
       <Link href={apiURL} style={{textDecoration:"none"}}>
         <Image src={image} alt=""  style={{width: "100%", height:"150px", objectFit:"cover"}}/>
@@ -25,6 +26,7 @@ const apiURL = "api"
         <ServiceDescription>{description}</ServiceDescription>
     </Link>
     </ServiceSection>
+    </>
   )
 }
 
