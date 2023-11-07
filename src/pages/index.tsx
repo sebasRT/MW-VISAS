@@ -11,7 +11,7 @@ const Main = () => {
           <Head >
       <title>MW-VISAS  -  Expertos migratorios - Colombia</title>
       <meta name="description" content="Encuentra asesoría y acompañamiento de expertos para obtener tu visa Americana o Canadiense"/>
-      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {/*-------------facebook Meta tags ------------------------------*/}
 
       <meta property="og:url" content="https://mw-visas.vercel.app/"/>
