@@ -1,5 +1,5 @@
 import { ServiceDescription, ServiceSection } from '@/pagesStyles/main/ServicesStyled'
-import useEncodeURI from '@/utils.tsx/useEncodeWppURI'
+import useEncodeURI from '@/utils/useEncodeWppURI'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'

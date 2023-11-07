@@ -1,6 +1,6 @@
 import { theme } from '@/componentsStyles/globalStyles';
 import { HeaderContainer, LogoImage, NavContainer} from '../componentsStyles/Header'
-import useWindowSize from '../utils.tsx/useWindowSize';
+import useWindowSize from '../utils/useWindowSize';
 import Info from './Info';
 import Link from 'next/link';
 
