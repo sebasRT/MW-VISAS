@@ -1,5 +1,5 @@
-import { theme } from "@/componentsStyles/globalStyles";
 import styled from "styled-components";
+import { theme } from "../../componentsStyles/globalStyles";
 
 
 export const IntroContainer = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "./globalStyles";
+import {theme} from "./globalStyles";
 
 export const ContactForm = styled.form`
 z-index: 1;
