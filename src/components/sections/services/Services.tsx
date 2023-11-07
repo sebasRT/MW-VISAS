@@ -6,7 +6,7 @@ import ServiceSectionC from "./ServiceSection"
 
 const Services = () => {
   return (
-    <>
+    
     <ServicesPage>
        <h1>Nuestros Servicios</h1>
 <ServicesContainer>
@@ -21,7 +21,7 @@ const Services = () => {
 
 </ServicesContainer>
     </ServicesPage>
-    </>
+  
     )
 }
 
