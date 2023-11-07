@@ -3,10 +3,9 @@ import Header from '@/components/Header'
 import Info from '@/components/Info'
 import { theme } from '@/componentsStyles/globalStyles'
 import '@/pagesStyles/globals.css'
-import useWindowSize from '@/utils.tsx/useWindowSize'
+import useWindowSize from '@/utils/useWindowSize'
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
-import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const [width] = useWindowSize();

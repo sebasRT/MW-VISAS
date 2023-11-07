@@ -1,4 +1,4 @@
-import { InfoContainer } from "../componentsStyles/Info"
+import { InfoContainer } from "@/componentsStyles/Info"
 
 const Info = ({color}:{color:string}) => {
   return (

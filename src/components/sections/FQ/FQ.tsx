@@ -1,4 +1,4 @@
-import { FQContainer, FQSection } from "../../../componentsStyles/FQ"
+import { FQContainer, FQSection } from "@/componentsStyles/FQ"
 
 const FrequentQuestions = () => {
   return (

@@ -1,8 +1,8 @@
-import { ServicesContainer,   ServicesPage } from "../../../pagesStyles/main/ServicesStyled"
-import usa from "../../../assets/USA.jpg"
-import ca from "../../../assets/R.jpg"
-import passport from "../../../assets/passport.png"
+import usa from "@/assets/USA.jpg"
+import ca from "@/assets/R.jpg"
+import passport from "@/assets/passport.png"
 import ServiceSectionC from "./ServiceSection"
+import { ServicesContainer, ServicesPage } from "@/pagesStyles/main/ServicesStyled"
 
 const Services = () => {
   return (
