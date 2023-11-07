@@ -2,10 +2,8 @@
 // import FrequentQuestions from './FQ/FQ'
 import AboutUs from '@/components/sections/about-us/AboutUs'
 import Services from '@/components/sections/services/Services'
-import { Inter } from 'next/font/google'
 import Head from 'next/head'
 
-const inter = Inter({ subsets: ['latin'] })
 
 const Main = () => {
   return (
@@ -14,8 +12,15 @@ const Main = () => {
       <title>MW-VISAS  -  Expertos migratorios - Colombia</title>
       <meta name="description" content="Encuentra asesoría y acompañamiento de expertos para obtener tu visa Americana o Canadiense"/>
       
+    {/*-------------facebook Meta tags ------------------------------*/}
+
+      <meta property="og:url" content="https://mw-visas.vercel.app/"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="MW-VISAS  -  Expertos migratorios - Colombia"/>
+      <meta property="og:description" content="Encuentra asesoría y acompañamiento de expertos para obtener tu visa Americana o Canadiense"/>
+      <meta property="og:image" content="https://i.postimg.cc/RZfprcbZ/mw-visas-Logo.webp"/>
+
       <meta charSet="utf-8"/>
-      {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
         <Services/>
         <AboutUs/>
