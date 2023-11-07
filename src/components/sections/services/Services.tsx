@@ -6,7 +6,7 @@ import { ServicesContainer, ServicesPage } from "@/pagesStyles/main/ServicesStyl
 
 const Services = () => {
   return (
-    
+    <>
     <ServicesPage>
        <h1>Nuestros Servicios</h1>
 <ServicesContainer>
@@ -21,6 +21,7 @@ const Services = () => {
 
 </ServicesContainer>
     </ServicesPage>
+    </>
   
     )
 }
