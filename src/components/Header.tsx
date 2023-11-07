@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <HeaderContainer size={width}>
-        <LogoImage src='https://static.wixstatic.com/media/8115ef_21790175318b45779c899bcde109b0cf~mv2.png/v1/fill/w_303,h_303,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8115ef_21790175318b45779c899bcde109b0cf~mv2.png)'/>
+        <LogoImage src= "https://i.postimg.cc/RZfprcbZ/mw-visas-Logo.webp"/>
         <NavContainer size={width}>
         
           <Link href='/' scroll>Inicio</Link>

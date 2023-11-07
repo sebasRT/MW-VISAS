@@ -6,7 +6,6 @@ size: number;
 }
 
 export const HeaderContainer = styled.div<headerProps>`
-z-index: 3;
 display: flex;
 flex-direction: ${props => props.size > 768? 'column' : 'row'};
 align-items: center;
@@ -31,10 +30,10 @@ box-shadow: 0 0 10px ;
 export const NavContainer = styled.nav<headerProps>`
 display: flex;
 flex-direction: ${props => props.size > 768? 'column' : 'row'};
-font-size: ${props => props.size > 768? '1em' : '0.5em'};
 gap: 20px;
 text-shadow: 0 0 5px black;
-a{
+a{  
+
     text-decoration: none;
     color: whitesmoke;
     font-weight: 800;
