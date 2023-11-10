@@ -1,7 +1,7 @@
 // import AboutUs from './about-us/AboutUs'
 // import FrequentQuestions from './FQ/FQ'
-import AboutUs from '@/components/sections/about-us/AboutUs'
-import Services from '@/components/sections/services/Services'
+import AboutUs from '@/components/about-us/AboutUs'
+import Services from '@/components/services/Services'
 import Head from 'next/head'
 
 
@@ -21,7 +21,7 @@ const Main = () => {
       <meta property="og:image" content="https://i.postimg.cc/RZfprcbZ/mw-visas-Logo.webp"/>
 
       <meta charSet="utf-8"/>
-      </Head>
+        </Head>
         <Services/>
         <AboutUs/>
         {/* <FrequentQuestions/>  */}

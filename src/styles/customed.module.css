@@ -1,0 +1,21 @@
+.servicesContainer {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns:  repeat(auto-fit, minmax(5rem , 15rem));
+    padding: 2rem;
+}
+.textShadow {
+    text-shadow: 0 0 5px black;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+.textShadow.active {
+    color: #79a6d2 ;
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow:none;
+}

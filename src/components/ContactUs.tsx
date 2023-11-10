@@ -98,11 +98,13 @@ const ContactUs: React.FC = () => {
 
 
   return (
-    <ContactForm>
-      <h1>Contáctenos</h1>
-      <p>Tramita tu visa con nosotros y<br /> obtén asesoría migratoria</p>
+    <form className='z-0 flex bg-white sticky top-1/4 self-center flex-col items-center text-center my-20'>
+      <h1 className='text-blue-primary font-bold text-xl'>Contáctenos</h1>
+      <br />
+      <p className='text-sm text-blue-dark'>Tramita tu visa con nosotros y obtén asesoría migratoria</p>
       <br />
       <input
+        className={inputStyles}
         placeholder="Nombre"
         type="text"
         name="name"
@@ -111,9 +113,10 @@ const ContactUs: React.FC = () => {
         onChange={(e)=>onChange(e)}
         required
         onInvalid={(e) => customValidation(e.target as HTMLInputElement)}
-        autoComplete=""
+        autoComplete="off"
         />
       <input
+        className={inputStyles}
         placeholder="Email"
         type="email"
         name="email"
@@ -123,6 +126,7 @@ const ContactUs: React.FC = () => {
         required
       />
       <textarea
+        className={inputStyles}
         placeholder="Asunto"
         name="subject"
         minLength={4}
@@ -133,17 +137,21 @@ const ContactUs: React.FC = () => {
         autoComplete="off"
       ></textarea>
       <textarea
+        className={inputStyles}
         placeholder="Escribe tu mensaje aquí..."
         name="message"
         value={state.message}
         onChange={(e)=>onChange(e)}
       ></textarea>
       <br />
-      <SendButton type="submit" onClick={submitHandler}  >
+      <button 
+      className='bg-blue-light hover:bg-blue-primary text-white p-3 rounded transition-colors'
+      type="submit"
+      onClick={submitHandler}>
         Enviar
-      </SendButton>
-    </ContactForm>
+      </button>
+    </form>
   );
 };
-
+const inputStyles = 'border-solid border-b-2 border-b-blue-light focus-visible:outline-none focus-visible:border-b-3 focus-visible:border-b-blue-primary'
 export default ContactUs;

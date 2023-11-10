@@ -1,4 +1,3 @@
-import { ServiceDescription, ServiceSection } from '@/pagesStyles/main/ServicesStyled'
 import useEncodeURI from '@/utils/useEncodeWppURI'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
@@ -19,13 +18,13 @@ const apiURL = useEncodeURI(apiParameters.phone, apiParameters.message)
 
   return (
     <>
-    <ServiceSection>
+    <section className='cursor-pointer rounded bg-grey border-2 hover:border-blue-primary p-1 w-full h-full transition-all duration-150'>
       <Link href={apiURL} style={{textDecoration:"none"}}>
         <Image src={image} alt=""  style={{width: "100%", height:"150px", objectFit:"cover"}}/>
-        <h1>{title}</h1>
-        <ServiceDescription>{description}</ServiceDescription>
+        <h1 className='font-semibold bg-blue-primary my-1 text-center text-grey'>{title}</h1>
+        <p className='text-blue-dark'>{description}</p>
     </Link>
-    </ServiceSection>
+    </section>
     </>
   )
 }

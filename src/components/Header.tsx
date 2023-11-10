@@ -1,25 +1,32 @@
 import useWindowSize from '../utils/useWindowSize';
 import Info from './Info';
 import Link from 'next/link';
-import { HeaderContainer, LogoImage, NavContainer } from '@/componentsStyles/Header';
+import Image from 'next/image';
+import styles from '@/styles/customed.module.css'
 
 const Header = () => {
   const [width] = useWindowSize();
   
 
   return (
-    <HeaderContainer size={width}>
-        <LogoImage src= "https://i.postimg.cc/RZfprcbZ/mw-visas-Logo.webp"/>
-        <NavContainer size={width}>
+    <div className='flex flex-row md:flex-col items-center bg-blue-dark p-4 top-0 m-0 sticky justify-between'>
+        <Image  
+          className='rounded-full shadow-full shadow-black'
+          src ='/mw-visasLogo.webp' width={width > 768 ? 180: 90} height={width > 768 ? 180: 90} alt='mw-visas logo' />
+        <nav className='flex flex-row md:flex-col gap-8 ' >
         
-          <Link href='/' scroll>Inicio</Link>
-          <Link href='aboutUs' scroll={false}>Nuestra Compañía</Link>
+          <Link 
+          className={styles.textShadow}
+          href='/' scroll>Inicio</Link>
+          <Link
+          className={styles.textShadow}
+           href='aboutUs' scroll={false}>Nuestra Compañía</Link>
           {/* <Link href='FQ'>Preguntas Frecuentes</Link> */}
           
-        </NavContainer>
-        { width > 768 ? <Info color={theme.colors.grey}/> : null}
+        </nav>
+        { width > 768 ? <Info size='text-xs' color='text-grey'/> : null}
         
-    </HeaderContainer>
+    </div>
   )
 }
 
