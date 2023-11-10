@@ -1,7 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import useEncodeWppURI from '@/utils/useEncodeWppURI';
 import { useRouter } from 'next/router';
-import { ContactForm, SendButton } from '@/componentsStyles/contactForm';
 
 interface State {
   name: string;

@@ -1,4 +1,3 @@
-import { theme } from '@/componentsStyles/globalStyles';
 import useWindowSize from '../utils/useWindowSize';
 import Info from './Info';
 import Link from 'next/link';
