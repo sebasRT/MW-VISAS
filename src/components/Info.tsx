@@ -1,5 +1,5 @@
 interface Props {
-  color: "text-grey" | "text-blue-dark"
+  color: "text-grey" | "text-blue-primary"
   size: "text-xs" | "text-base"
 }
 

@@ -2,7 +2,7 @@ import React, { useReducer, useState } from 'react';
 import useEncodeWppURI from '@/utils/useEncodeWppURI';
 import { useRouter } from 'next/router';
 import {FaInstagram} from 'react-icons/fa'
-import {FaWhatsapp} from 'react-icons/fa'
+import {AiOutlineFacebook} from 'react-icons/ai'
 import Link from 'next/link';
 
 interface State {
@@ -158,7 +158,7 @@ const ContactUs: React.FC = () => {
    </form>
 <div className='flex flex-row justify-around text-blue-primary py-10'>
 <Link href="https://www.instagram.com/mw.visas/"><FaInstagram  className='cursor-pointer' size={40}></FaInstagram></Link>
-<Link href="https://api.whatsapp.com/send?phone=573196578007"><FaWhatsapp className='cursor-pointer' size={40}></FaWhatsapp></Link>
+<Link href="https://www.facebook.com/visasmwsas?locale=es_LA"><AiOutlineFacebook className='cursor-pointer' size={40}></AiOutlineFacebook></Link>
 
 </div>
         </div>
