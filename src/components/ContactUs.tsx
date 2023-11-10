@@ -1,6 +1,9 @@
 import React, { useReducer, useState } from 'react';
 import useEncodeWppURI from '@/utils/useEncodeWppURI';
 import { useRouter } from 'next/router';
+import {FaInstagram} from 'react-icons/fa'
+import {FaWhatsapp} from 'react-icons/fa'
+import Link from 'next/link';
 
 interface State {
   name: string;
@@ -98,7 +101,9 @@ const ContactUs: React.FC = () => {
 
 
   return (
-    <form className='z-0 flex bg-white sticky top-1/4 self-center flex-col items-center text-center my-20'>
+  <div className='sticky flex flex-col top-0 pt-24 justify-between'>
+
+    <form className='z-0 flex bg-white self-center flex-col items-center text-center'>
       <h1 className='text-blue-primary font-bold text-xl'>Contáctenos</h1>
       <br />
       <p className='text-sm text-blue-dark'>Tramita tu visa con nosotros y obtén asesoría migratoria</p>
@@ -135,14 +140,14 @@ const ContactUs: React.FC = () => {
         onInvalid={(e) => customValidation(e.target as HTMLInputElement)}
         required
         autoComplete="off"
-      ></textarea>
+        ></textarea>
       <textarea
         className={inputStyles}
         placeholder="Escribe tu mensaje aquí..."
         name="message"
         value={state.message}
         onChange={(e)=>onChange(e)}
-      ></textarea>
+        ></textarea>
       <br />
       <button 
       className='bg-blue-light hover:bg-blue-primary text-white p-3 rounded transition-colors'
@@ -150,8 +155,15 @@ const ContactUs: React.FC = () => {
       onClick={submitHandler}>
         Enviar
       </button>
-    </form>
+   </form>
+<div className='flex flex-row justify-around text-blue-primary py-10'>
+<Link href="https://www.instagram.com/mw.visas/"><FaInstagram  className='cursor-pointer' size={40}></FaInstagram></Link>
+<Link href="https://api.whatsapp.com/send?phone=573196578007"><FaWhatsapp className='cursor-pointer' size={40}></FaWhatsapp></Link>
+
+</div>
+        </div>
+       
   );
 };
-const inputStyles = 'border-solid border-b-2 border-b-blue-light focus-visible:outline-none focus-visible:border-b-3 focus-visible:border-b-blue-primary'
+const inputStyles = 'border-solid border-b-2 border-b-blue-light focus-visible:outline-none focus-visible:border-b-3 resize-none focus-visible:border-b-blue-primary'
 export default ContactUs;
