@@ -12,6 +12,7 @@
     color: whitesmoke;
     font-weight: 800;
     transition: all 0.3s ease;
+    height: 100%;
 }
 .textShadow.active {
     color: #79a6d2 ;

@@ -20,7 +20,7 @@ const Header = () => {
           href='/' scroll>Inicio</Link>
           <Link
           className={styles.textShadow}
-           href='aboutUs' scroll={false}>Nuestra Compañía</Link>
+           href='aboutUs' scroll>Nuestra Compañía</Link>
           {/* <Link href='FQ'>Preguntas Frecuentes</Link> */}
           
         </nav>
