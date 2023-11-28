@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Disallow: /
+
+# Host
+Host: http://mwvisas.co
+
+# Sitemaps
+Sitemap: http://mwvisas.co/sitemap.xml
