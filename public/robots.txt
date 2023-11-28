@@ -1,4 +1,8 @@
-User-agent: * 
-Allow: /
+# *
+User-agent: *
 
-Sitemap: 
+# Host
+Host: https://www.mwvisas.co
+
+# Sitemaps
+Sitemap: https://www.mwvisas.co/sitemap.xml

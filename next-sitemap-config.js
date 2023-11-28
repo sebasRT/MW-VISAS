@@ -19,5 +19,5 @@ module.exports = {
         ]
         
     },
-    outDir: "./"
+    outDir: "./public"
 }
