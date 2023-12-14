@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <div className="items-center text-center bg-grey text-blue-dark m-2">
-      <h2 className="bg-blue-primary text-grey p-1.5 font-bold">MW-VISAS</h2>
+      <h2 className="bg-blue-primary text-grey p-1.5 font-bold">MW-VISAS S.A.S</h2>
     <p className="p-3 text-base">
     ¡Bienvenidos a MW-VISAS! Somos una firma dedicada a hacer realidad tus sueños de 
     migrar a Estados Unidos y Canadá. Con una trayectoria sólida y un equipo de expertos 
