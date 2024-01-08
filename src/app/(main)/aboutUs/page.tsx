@@ -3,7 +3,7 @@ import React from 'react'
 const Page = () => {
   
   return (
-    <div className='items-center text-center text-blue-dark w-full'>
+    <article className='items-center text-center text-blue-dark w-full'>
       <h1 className='text-3xl font-semibold text-blue-primary m-2.5'>Quienes somos</h1>
 
       <section className={sectionStyles.section}>
@@ -40,7 +40,7 @@ const Page = () => {
       <section>
 
       </section>
-    </div >
+    </article >
   )
 }
 const sectionStyles = {section:'bg-grey m-3',

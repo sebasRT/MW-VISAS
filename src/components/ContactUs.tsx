@@ -1,6 +1,7 @@
+'use client'
 import React, { useReducer, useState } from 'react';
 import useEncodeWppURI from '@/utils/useEncodeWppURI';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import {FaInstagram} from 'react-icons/fa'
 import {AiOutlineFacebook} from 'react-icons/ai'
 import Link from 'next/link';
@@ -73,7 +74,7 @@ ${state.email}`
   return useEncodeWppURI(573196578007, message)
 }
 
-const ContactUs: React.FC = () => {
+const ContactUs = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
    const router = useRouter()
 

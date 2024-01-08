@@ -1,11 +1,7 @@
-interface Props {
-  color: "text-grey" | "text-blue-primary"
-  size: "text-xs" | "text-base"
-}
 
-const Info:React.FC<Props>= ({color, size}) => {
+const Info = ({styles}:{styles:string}) => {
   return (
-   <div className={`${color} ${size} text-center `}>
+   <div className={styles}>
    <h3>MW VISAS</h3>
     <p>INFO@MWVISAS.CO</p>
     <p>Bogotá, Colombia </p>
