@@ -11,6 +11,6 @@ export default function MainLayout({
         <Header/>
             {children}
           <ContactUs/>
-        <Info styles="text-blue-primary text-base md:hidden"/>
+        <Info styles="text-blue-primary text-base text-center md:hidden"/>
     </div> ) 
   }
