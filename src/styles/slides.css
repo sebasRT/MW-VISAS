@@ -1,0 +1,83 @@
+.sliderFrame{
+    width: 300px;
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    color: black;
+}
+
+@keyframes slide_animation{
+    0% {left: 0px;}
+    20% {left: calc(-290px*1);}
+    40% {left: calc(-290px*2);}
+    60% {left: calc(-290px*3);}
+    80% {left:  calc(-290px*4);}
+    100%  {left:  calc(-290px*5);}
+}
+@keyframes slide_animation_md{
+    0% {left: 0px;}
+    20% {left: calc(-580px*1);}
+    40% {left: calc(-580px*2);}
+    60% {left: calc(-580px*3);}
+    80% {left:  calc(-580px*4);}
+    100%  {left:  calc(-580px*5);}
+}
+
+.slideItems{
+    width: calc(290px*6);
+    width: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    animation-name: slide_animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.sliderFrame::after,
+.sliderFrame::before {
+    content: "";
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.sliderFrame::before{
+    left: 0px;
+    top: 0;
+}
+.sliderFrame::after{
+    right: 0px;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.itemContainer{
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position:relative;
+    float: left;
+}
+
+@media screen and (min-width: 768px) {
+    .sliderFrame{
+        width: 600px;
+    }
+    .slideItems{
+        animation-name:slide_animation_md ;
+    }
+    .itemContainer{
+        width: 500px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }    
+}

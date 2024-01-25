@@ -3,33 +3,36 @@ import React from 'react'
 const Page = () => {
   
   return (
-    <article className='items-center text-center text-blue-dark w-full'>
-      <h1 className='text-3xl font-semibold text-blue-primary m-2.5'>Quienes somos</h1>
+    <article className='items-center w-full text-xl'>
+      <h1 className='text-3xl font-semibold text-primary-700 m-2.5 text-center'>Quienes somos</h1>
 
-      <section className={sectionStyles.section}>
-        <h2 className={sectionStyles.h2}>Misión</h2>
-        <p className={sectionStyles.p}>
-          Brindamos un acompañamiento basado en nuestros principios corporativos
+      <section className='bg-primary-700 text-primary-50 text-left py-4 px-3'>
+        <h2 className='font-semibold text-2xl text-primary-200'>Misión</h2>
+        <br />
+        <p >
+          Brindamos un <b>acompañamiento</b> basado en nuestros principios corporativos
           como excelencia, respeto, transparencia, responsabilidad social, honestidad
-          y agilidad. Esta guía permite a todos nuestros usuarios sentir un trato humano
-          que se enfoca en las necesidades individuales, garantizamos un excelente servicio
-          de calidad en nuestros procesos migratorios.
+          y agilidad. Esta guía permite a todos nuestros usuarios sentir un <b>trato humano
+          </b> que se enfoca en las necesidades individuales, garantizamos un <b>excelente servicio</b> de
+           calidad en nuestros procesos migratorios.
         </p>
       </section>
 
-      <section className={sectionStyles.section}>
-        <h2 className={sectionStyles.h2}>Visión</h2>
-        <p className={sectionStyles.p}>
-        Para el 2028  M.W VISAS será una compañía con alto reconocimiento nacional e
+      <section className='bg-primary-100 text-right text-primary-900 py-4 px-3'>
+        <h2 className='font-semibold text-2xl text-primary-700'>Visión</h2>
+        <br />
+        <p >
+        Para el 2028  <b>M.W VISAS</b> será una compañía con alto reconocimiento nacional e
         internacional en procesos migratorios con todos los marcos legales, debido a 
-        nuestro profesionalismo que nos permite hacer realidad los sueños y proyectos 
+        nuestro <b>profesionalismo</b> que nos permite hacer realidad los sueños y proyectos 
         de vida de nuestros clientes.
         </p>
       </section>
 
-      <section className={sectionStyles.section}>
-        <h2 className={sectionStyles.h2} >Objetivo General</h2>
-        <p className={sectionStyles.p}>
+      <section className='bg-primary-700 text-primary-50 text-left py-4 px-3'>
+        <h2  className='font-semibold text-2xl text-primary-200'>Objetivo General</h2>
+        <br />
+        <p >
         Brindar asesorías internacionales de manera integral, aportando las 
         herramientas y técnicas necesarias para un exitoso proceso migratorio 
         teniendo presente el marco reglamentario  contribuyendo a cada  solicitud 
@@ -42,9 +45,5 @@ const Page = () => {
       </section>
     </article >
   )
-}
-const sectionStyles = {section:'bg-grey m-3',
-  h2: 'bg-blue-primary text-grey p-1.5 font-bold',
-  p: 'p-10 text-xl'
 }
 export default Page
