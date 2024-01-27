@@ -16,7 +16,7 @@ export async function sendNewClientEmail(data: Form) {
 
     try {
         const result = await resend.emails.send({
-            from: 'Clientes <jesnero11@gmail.com>',
+            from: 'Clientes <onboarding@resend.dev>',
             to: ['info@mwvisas.co'],
             subject: 'Un usuario te ha enviado un correo',
             react: NewEmailFromClientTemplate({ data }) as React.ReactElement,
