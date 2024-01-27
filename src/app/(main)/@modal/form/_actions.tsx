@@ -13,7 +13,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
         const {name, phone, email, service} = data
 
         const result = await resend.emails.send({
-            from: 'Clientes <onboarding@resend.dev>',
+            from: 'Clientes <rtsebas11@gmail.com>',
             to: ['info@mwvisas.co'],
             subject: 'Cliente interesado en tus servicios',
             react: NewServicePetitionTemplate({ clientName: name, email, phone, service }) as React.ReactElement,
