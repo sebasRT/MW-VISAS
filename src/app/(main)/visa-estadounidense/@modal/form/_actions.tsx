@@ -12,7 +12,7 @@ export async function newJobApplication(data: JobApplicationForm ){
         const {name, phone, email, country} = data
 
         const result = await resend.emails.send({
-            from: 'Clientes <info@mwvisas.co>',
+            from: 'Clientes <jesnero11@gmail.com>',
             to: ['info@mwvisas.co'],
             subject: 'Postulación de trabajo',
             react: NewJobApplicantTemplate({ clientName: name, email, phone, country }) as React.ReactElement,

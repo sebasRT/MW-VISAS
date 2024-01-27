@@ -12,7 +12,7 @@ export async function newServicePetition (data: ServicePetitionForm) {
         const {name, phone, email, service} = data
 
         const result = await resend.emails.send({
-            from: 'Clientes <info@mwvisas.co>',
+            from: 'Clientes <jesnero11@gmail.com>',
             to: ['info@mwvisas.co'],
             subject: 'Cliente interesado en tus servicios',
             react: NewServicePetitionTemplate({ clientName: name, email, phone, service }) as React.ReactElement,
