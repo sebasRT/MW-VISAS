@@ -16,21 +16,20 @@ export async function sendNewClientEmail(data: Form) {
 
     try {
         const result = await resend.emails.send({
-            from: 'Clientes <rtsebas11@gmail.com>',
+            from: 'Clientes <info@mwvisas.co>',
             to: ['info@mwvisas.co'],
             subject: 'Un usuario te ha enviado un correo',
             react: NewEmailFromClientTemplate({ data }) as React.ReactElement,
         })
-       if(result.data?.id ) {
-           const confirmation = await emailConfirmationToClient(data)
-           return confirmation.result
-       }
+
+        result.data?.id && await emailConfirmationToClient(data)
        return result
     } catch (error: any) {
         throw new Error(error.message)
     }
 
 }
+
 export async function emailConfirmationToClient(data: Form) {
 
     try {
@@ -41,7 +40,6 @@ export async function emailConfirmationToClient(data: Form) {
             subject: 'Datos recibidos',
             react: ConfirmationToClientTemplate({ clientName: name }) as React.ReactElement,
         });
-
         return { result };
     } catch (error: any) {
         throw new Error(error.message)

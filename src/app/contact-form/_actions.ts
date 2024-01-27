@@ -13,13 +13,13 @@ export async function newClient(data: ClientData) {
     try {
         const {name, email, phone, procedure, details} = data
         const result = await resend.emails.send({
-          from: 'Clientes <rtsebas11@gmail.com>',
+          from: 'Clientes <info@mwvisas.co>',
           to: ['info@mwvisas.co'],
           subject: 'Nuevo cliente interesado en tus servicios',
           react: NewClientTemplate({ clientName: name, email, phone, procedure, details }) as React.ReactElement,
         });
 
-        result.data?.id && confirmationEmailToClient(data)
+        result.data?.id && await confirmationEmailToClient(data)
         return {result};
       } catch (error: any) {
         throw new Error(error.message)
