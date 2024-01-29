@@ -28,6 +28,7 @@ export async function sendNewClientEmail(data: Form) {
         throw new Error(error.message)
     }
 
+   
 }
 
 export async function emailConfirmationToClient(data: Form) {

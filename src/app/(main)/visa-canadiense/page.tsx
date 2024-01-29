@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-    title: 'Tramita tu visa estadounidense',
+    title: 'Tramita tu visa Canadiense',
     description: 'Nuestros expertos migratorios te brindaran asesoría y acompañamiento de principio a fin en el proceso de tu visa Canadiense.'
   }
   
