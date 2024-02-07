@@ -33,7 +33,7 @@ const Feature = ({ description, children }: { description: string, children: Rea
     return (
         <div className='itemContainer text-primary-600'>
            {children}
-            <p className='font-semibold text-2xl text-primary-950 '>{description}</p>
+            <p className='font-semibold text-lg md:text-2xl text-primary-950 '>{description}</p>
         </div>
     )
 

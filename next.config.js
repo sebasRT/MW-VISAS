@@ -3,7 +3,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/copia-de-nuestra-compañia',
+        source: '/copia-de-nuestra-compa%C3%B1ia',
         destination: '/aboutUs',
         permanent: true
       },

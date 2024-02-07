@@ -25,7 +25,7 @@ const WhyUs = () => {
               <GiColombia /><LuSearch className="text-xl text-primary-500 absolute top-[50%] right-7" />
             </div></Feature>
           <Feature description='Orientación de principio a fin en tu solicitud' >
-            <div className="flex flex-row text-4xl">
+            <div className="flex flex-row text-2xl md:text-4xl">
               <MdKeyboardDoubleArrowRight /><MdCheckCircle /><MdKeyboardDoubleArrowRight /><MdCheckCircle />
             </div></Feature>
           <Feature description='Capacitación para entrevista consular' >
@@ -40,7 +40,7 @@ const Feature = ({ description, children }: { description: string, children: Rea
     return (
       <div className='flex flex-col items-center text-7xl bg-primary-500 justify-around hover:bg-primary-600 hover:scale-105 transition ease-in rounded-sm'>
         {children}
-        <span className="text-base">{description}</span>
+        <span className="text-sm md:text-base">{description}</span>
       </div>
     )
   

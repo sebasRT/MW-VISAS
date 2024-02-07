@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const canadianVisasPage = () => {
     return (
         <div className='w-full flex flex-col items-center justify-center text-primary-700'>
-            <h1 className='text-center text-3xl font-semibold'>VISA CANADIENSE</h1>
+            <h1 className='text-center text-2xl md:text-3xl font-semibold'>VISA CANADIENSE</h1>
             <section className='w-full my-16 self-center flex flex-col items-center'>
                 <h3 className='text-2xl mb-3'>¿Qué tipo de visa buscas?</h3>
                 <div className='grid grid-cols-2 w-3/4'>
