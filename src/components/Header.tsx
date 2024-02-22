@@ -98,7 +98,7 @@ const Header = () => {
           href='aboutUs' scroll>Nuestra Compañía</Link>
           <Link
           className="text-primary-50 font-semibold font-sans uppercase hover:scale-105 transition"
-          href='services' scroll>Preguntas frecuentes</Link>
+          href='FAQ' scroll>Preguntas frecuentes</Link>
           
        
         </div>
