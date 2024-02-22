@@ -9,7 +9,7 @@ const Main = () => {
       <h1 className='text-5xl font-bold text-center text-primary-700'>MW-VISAS</h1>
       <GetVisaBanner />
       <hr />
-      <p className='p-3 text-primary-900 text-center text-lg my-3'>    ¡Bienvenid@ a <b>MW-VISAS</b>! Somos una firma dedicada a hacer realidad tus sueños de
+      <p className='p-3 text-primary-900 text-center text-lg my-3'> ¡Bienvenid@ a <b>MW-VISAS</b>! Somos una firma dedicada a hacer realidad tus sueños de
         migrar a <b>Estados Unidos</b> y <b>Canadá</b>. Con una trayectoria sólida y un equipo de <b>expertos
           en leyes migratorias</b>, nos enorgullece ser tu aliado en este emocionante viaje hacia nuevas oportunidades
         y horizontes.

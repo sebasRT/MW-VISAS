@@ -12,6 +12,7 @@ const Header = () => {
   };
   return (
     <div className='sticky
+    md:w-min
       flex
       flex-row
       items-center 
@@ -73,10 +74,13 @@ const Header = () => {
               href='/' scroll>Inicio</Link></li>
             <li><Link
               className="text-primary-50 font-sans uppercase "
-              href='aboutUs' scroll>Nuestra Compañía</Link></li>
+              href='/services' scroll>Servicios</Link></li>
             <li><Link
               className="text-primary-50 font-sans uppercase "
-              href='services' scroll>Servicios</Link></li>
+              href='/aboutUs' scroll>Nuestra Compañía</Link></li>
+            <li><Link
+              className="text-primary-50 font-sans uppercase "
+              href='/FAQ' scroll>Preguntas frecuentes</Link></li>
           </ul>
               </div>
         </div>
@@ -86,12 +90,16 @@ const Header = () => {
           <Link
           className="text-primary-50 font-semibold font-sans uppercase hover:scale-105 transition"
           href='/' scroll>Inicio</Link>
+          <Link
+          className="text-primary-50 font-semibold font-sans uppercase hover:scale-105 transition"
+          href='services' scroll>Servicios</Link>
         <Link
           className="text-primary-50 font-semibold font-sans uppercase hover:scale-105 transition"
           href='aboutUs' scroll>Nuestra Compañía</Link>
           <Link
           className="text-primary-50 font-semibold font-sans uppercase hover:scale-105 transition"
-          href='services' scroll>Servicios</Link>
+          href='services' scroll>Preguntas frecuentes</Link>
+          
        
         </div>
       </nav >

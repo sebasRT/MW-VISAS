@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: ['Applebot', 'Bingbot'],
-        disallow: ['/'],
+        allow: ['/'],
       },
     ],
     sitemap: 'https://www.mwvisas.co/sitemap.xml',

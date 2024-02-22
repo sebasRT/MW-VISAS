@@ -2,7 +2,7 @@
 import React, { useReducer, useState } from 'react';
 import useEncodeWppURI from '@/utils/useEncodeWppURI';
 import { useRouter } from 'next/navigation';
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram, FaLocationArrow, FaWhatsapp } from 'react-icons/fa'
 import { AiOutlineFacebook } from 'react-icons/ai'
 import Link from 'next/link';
 import { sendNewClientEmail } from './services/_actions';
@@ -130,7 +130,7 @@ const ContactUs = () => {
 
 
   return (
-    <div className='md:sticky md:h-screen flex flex-col top-0  justify-around'>
+    <div className='md:sticky md:h-screen flex flex-col top-0  justify-around md:w-min'>
 
       <form className='z-0 flex bg-white self-center flex-col items-center text-center p-2'>
         <h1 className='text-primary-700 font-bold text-xl'>Contáctenos</h1>
@@ -224,6 +224,13 @@ const ContactUs = () => {
         <Link href="https://www.facebook.com/visasmwsas?locale=es_LA"><AiOutlineFacebook className='cursor-pointer' size={40}></AiOutlineFacebook></Link>
 
       </div>
+
+      <Link href="https://maps.app.goo.gl/AHT72SDgqejdBf6n6"  className=' flex items-center px-7 py-3 cursor-pointer text-center text-lg gap-2 text-primary-900 md:text-sm md:px-2'>
+      <span>
+        Calle 100 # 19 - 61 oficina 502
+        </span>
+        <FaLocationArrow className="text-3xl"/>
+      </Link>
     </div>
 
   );

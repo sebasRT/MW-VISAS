@@ -12,7 +12,7 @@ import '@/styles/slides.css'
 const Slide = () => {
   return (
     <div className="sliderFrame">
-    <div className="slideItems text-5xl ">
+    <section className="slideItems text-5xl ">
         <Feature description='Proceso totalmente personalizado'> <BsFillPersonCheckFill/></Feature>
         <Feature description='Análisis de viabilidad antes de iniciar solicitud' ><LuSearchCheck /></Feature>
         <Feature description='Consulta desde cualquier lugar del país' >            <div className="relative ">
@@ -24,17 +24,17 @@ const Slide = () => {
             </div></Feature>
         <Feature description='Transparencia y eficacia en cada proceso' ><FaHandsHelping/></Feature>
         <Feature description='Capacitación para entrevista consular' ><LiaChalkboardTeacherSolid/></Feature>
-    </div>
+    </section>
 </div>
 )
 }
 
 const Feature = ({ description, children }: { description: string, children: ReactNode }) => {
     return (
-        <div className='itemContainer text-primary-600'>
+        <article className='itemContainer text-primary-600'>
            {children}
             <p className='font-semibold text-lg md:text-2xl text-primary-950 '>{description}</p>
-        </div>
+        </article>
     )
 
 }
