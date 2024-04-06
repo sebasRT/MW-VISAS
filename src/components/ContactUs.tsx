@@ -133,7 +133,7 @@ const ContactUs = () => {
     <div className='md:sticky md:h-screen flex flex-col top-0  justify-around md:w-min'>
 
       <form className='z-0 flex bg-white self-center flex-col items-center text-center p-2'>
-        <h1 className='text-primary-700 font-bold text-xl'>Contáctenos</h1>
+        <h2 className='text-primary-700 font-bold text-xl'>Contáctenos</h2>
         <br />
         <p className='text-sm text-primary-dark'>Tramita tu visa con nosotros y obtén asesoría migratoria</p>
         <br />

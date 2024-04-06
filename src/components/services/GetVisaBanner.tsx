@@ -12,10 +12,8 @@ const GetVisaBanner = () => {
     // <section className={styles.GetVisaBanner + " " + "text-white h-80 md:h-64 relative grid place-items-center p-4 m-3 text-2xl text-center"}>
     <section className='relative h-80 md:h-72 grid place-items-center p-4 m-3 text-2xl text-center justify-center text-primary-50 bg-gradient-to-b from-transparent to-black'>
       
-      <CldImage src="mw-visas/g9rtqmz0sc8uhcpgtiba" alt='get your visa banner'  fill={true} style={{objectFit: "cover", objectPosition: "top", zIndex: -1}} className='' />
+      <CldImage src="mw-visas/g9rtqmz0sc8uhcpgtiba" alt='Obtén tu visa'  fill={true} style={{objectFit: "cover", objectPosition: "top", zIndex: -1}} className='' />
      
-
-
       {
         clicked ? <>
           <p>¿A que país te gustaría viajar?</p>
