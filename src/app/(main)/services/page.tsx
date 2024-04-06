@@ -18,7 +18,7 @@ const servicesPage = () => {
       <h1 className='text-primary-700 text-4xl font-semibold'>Todos nuestros servicios</h1>
       <p className='text-primary-950 font-medium text-lg'>Mediante nuestra <b>amplia experiencia</b> prestando servicios de migración nos aseguraremos de que todo nuestro 
         equipo de trabajo te brinde la mejor <b>asesoría</b> y <b>acompañamiento</b> para que cada sueño que coloques en nuestras manos tenga como resultado un <b>éxito total</b>.</p>
-      <div className='grid gap-5 md:grid-cols-2'>
+      <article className='grid gap-5 md:grid-cols-2'>
         <Service value='pasaporte' title='Pasaporte'><Image src={passportIcon} alt="united states flag" width={80} /></Service>
         <VisaService visa='visa-estadounidense' title='Visa estadounidense'><Image src={usIcon} alt="United States flag" width={80} /></VisaService>
         <VisaService visa='visa-canadiense' title='Visa canadiense'><Image src={caIcon} alt="Canada flag" width={80} /></VisaService>
@@ -27,7 +27,7 @@ const servicesPage = () => {
         <Service value='asesoríaTurismo' title='Asesoría para primer visa turismo'><Image src={touristVisaConsultIcon} alt="Canada flag" width={80} /></Service>
         <Service value='asesoríaEstudio' title='Asesoría para primer visa estudiantil'><Image src={studentsIcon} alt="Canada flag" width={80} /></Service>
         <Service value='postulaciónLaboral' title='Postulación laboral Estados unidos o Canadá'><Image src={businessIcon} alt="Canada flag" width={80} /></Service>
-      </div>
+      </article>
       <WhyUs/>
     </div>
   )
@@ -37,21 +37,21 @@ type ServiceType = "pasaporte" | "visaNegada" | "visaFamiliar" | "asesoríaTuris
 
 const Service = ({children, title, value}:{children:ReactNode, title: string, value: ServiceType}) => {
   return (
-    <div className='bg-primary-50 rounded-md border-transparent border-2 hover:border-primary-400 transition ease-out flex flex-col items-center gap-2 text-primary-900'> 
+    <section className='bg-primary-50 rounded-md border-transparent border-2 hover:border-primary-400 transition ease-out flex flex-col items-center gap-2 text-primary-900'> 
     <b>{title}</b>
     {children}
     <Link className='italic text-xs underline cursor-pointer' href={`/services/form?service=${value}`}>Solicitar</Link>
-    </div>
+    </section>
     )
   
 }
 const VisaService = ({children, title, visa}:{children:ReactNode, title: string, visa: "visa-canadiense" | "visa-estadounidense"}) => {
   return (
-    <div className='bg-primary-50 rounded-md border-transparent border-2 hover:border-primary-400 transition ease-out flex flex-col items-center gap-2 text-primary-900'> 
+    <section className='bg-primary-50 rounded-md border-transparent border-2 hover:border-primary-400 transition ease-out flex flex-col items-center gap-2 text-primary-900'> 
     <b>{title}</b>
     {children}
     <Link className='italic text-xs underline cursor-pointer' href={`/${visa}`}>Solicitar</Link>
-    </div>
+    </section>
     )
   
 }

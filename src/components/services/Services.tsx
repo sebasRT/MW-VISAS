@@ -74,7 +74,7 @@ const ServiceSectionC = ({ title, image, url }: props) => {
   return (
     <div className="h-full min-w-[250px] p-2 hover:scale-105 transition ease-out">
       <section className='h-full cursor-pointer flex flex-col gap-3 items-center rounded bg-grey border-2 hover:border-primary-700 transition-all duration-150 text-grey'>
-          <h1 className='font-semibold bg-primary-700 my-1 text-center text-grey w-full'>{title}</h1>
+          <h3 className='font-semibold bg-primary-700 my-1 text-center text-grey w-full'>{title}</h3>
         <Link href={url} style={{ textDecoration: "none" }}>
           <Image src={image} alt="" style={{ width: "200%", height: "150px", objectFit: "cover" }} />
         </Link>

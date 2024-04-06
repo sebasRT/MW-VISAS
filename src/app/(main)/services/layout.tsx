@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 
 const layout = ({children, modal}:{children: ReactNode, modal: ReactNode}) => {
   return (
-    <>
+    <main>
     {modal}
     {children}
-    </>
+    </main>
   )
 }
 
