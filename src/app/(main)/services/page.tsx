@@ -40,11 +40,11 @@ const Service = ({children, title, value}:{children:ReactNode, title: string, va
     <section className='bg-primary-50 rounded-md border-transparent border-2 hover:border-primary-400 transition ease-out flex flex-col items-center gap-2 text-primary-900'> 
     <b>{title}</b>
     {children}
-    <Link className='italic text-xs underline cursor-pointer' href={`/services/form?service=${value}`}>Solicitar</Link>
+    <Link className='italic text-xs underline cursor-pointer' href={`/services/form?service=${value}`}>Saber más</Link>
     </section>
-    )
-  
+    ) 
 }
+
 const VisaService = ({children, title, visa}:{children:ReactNode, title: string, visa: "visa-canadiense" | "visa-estadounidense"}) => {
   return (
     <section className='bg-primary-50 rounded-md border-transparent border-2 hover:border-primary-400 transition ease-out flex flex-col items-center gap-2 text-primary-900'> 

@@ -24,7 +24,6 @@ const Main = () => {
       <Services />
       <WhyUs/>
       
-      {/* <FrequentQuestions/>  */}
     </article>
   )
 }
